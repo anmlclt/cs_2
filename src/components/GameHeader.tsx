@@ -46,20 +46,20 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
         <div className="flex items-center justify-between w-full">
           <button
             onClick={onShowLeaderboard}
-            className="h-12 w-12 flex items-center justify-center rounded-xl
+            className="h-10 w-10 flex items-center justify-center rounded-xl
                      bg-white/5 hover:bg-white/10 text-white/90
                      border border-white/10 transition-colors duration-200"
           >
-            <Trophy className="w-5 h-5 text-yellow-400" />
+            <Trophy className="w-4 h-4 text-yellow-400" />
           </button>
-          <Logo variant="mobile" className="h-10" />
+          <Logo variant="mobile" className="h-8" />
           <button
             onClick={onShowInfo}
-            className="h-12 w-12 flex items-center justify-center rounded-xl
+            className="h-10 w-10 flex items-center justify-center rounded-xl
                      bg-white/5 hover:bg-white/10 text-white/70 hover:text-white/90 
                      transition-colors duration-200"
           >
-            <Info className="w-5 h-5" />
+            <Info className="w-4 h-4" />
           </button>
         </div>
 
