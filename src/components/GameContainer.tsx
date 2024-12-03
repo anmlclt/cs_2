@@ -21,9 +21,9 @@ export const GameContainer: React.FC<GameContainerProps> = ({
   wrongSquareIndex,
   level,
 }) => (
-  <div className="w-full min-h-screen pt-64 md:pt-8 md:pl-32">
+  <div className="w-full min-h-screen pt-64 md:pt-16 md:pl-32">
     <div className="w-full h-full flex flex-col items-center justify-center p-4">
-      <div className="aspect-square w-[min(80vh,80vw)] md:w-[min(70vh,70vw)] relative">
+      <div className="w-[calc(100%-1rem)] md:w-[min(85vh,85vw)] aspect-square max-w-[800px] relative">
         <GameGrid
           gridSize={gameState.gridSize}
           mainColor={gameState.mainColor}
