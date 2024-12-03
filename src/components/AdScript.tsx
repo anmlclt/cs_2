@@ -5,7 +5,7 @@ export const AdScript: React.FC = () => {
     // Initialize ad script
     const script = document.createElement('script');
     script.async = true;
-    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID";
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2705229865080724";
     script.crossOrigin = "anonymous";
     document.head.appendChild(script);
 
@@ -19,8 +19,9 @@ export const AdScript: React.FC = () => {
     };
 
     return () => {
-      // Cleanup
-      document.head.removeChild(script);
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
     };
   }, []);
 
